@@ -1,0 +1,94 @@
+.FauxContainer {
+	background-color: #FFF;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+	margin: 0;
+	padding: 0;
+}
+.FauxSidebar {
+	background-color: #FFF;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+	height: 93vh;
+	position: fixed;
+	z-index: 9;
+	padding: 1rem 2rem;
+}
+.Sidebar {
+	/* background-color: #FFF; */
+	/* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+	height: 93vh; */
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+	margin: 0;
+	padding: 2rem;
+}
+.navbar {
+	height: 7vh;
+	margin-bottom: 0px !important;
+}
+.navbar > .container {
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+.container > .navbar-header {
+	margin-top: -76px;
+}
+.navbar > .container > .navbar-collapse {
+	background-color: #FFF;
+	margin: -2rem;
+	margin-top: 7vh;
+	padding: 2rem;
+	overflow: visible;
+	border-bottom: 1px solid #eee;
+}
+.navbar-collapse {
+	max-height: 100%;
+}
+.navbar-toggle .icon-bar {
+    background-color: black;
+}
+.navbar-default {
+	background: transparent;
+	border: 0px solid transparent;
+}
+.navbar-collapse {
+	padding-bottom: 20px;
+}
+.navbar-default .navbar-collapse {
+	border: 0px solid #fff;
+}
+.navbar-static-top .navbar-collapse {
+	height: calc(100vh - 20px) !important;
+}
+.sidebarSelected {
+	width: 100%;
+}
+.sidebarSelected table {
+	border-collapse: collapse;
+}
+.sidebarSelected td, .sidebarSelected th {
+	padding: 5px;
+    text-align:left;
+}
+.sidebarSelected td + td, .sidebarSelected th + th {
+	padding: 5px;
+    text-align:right;
+}
+.sidebarSelected .hide-hr {
+	border: 0px;
+}
+.sidebarSelected tr {
+	box-shadow: 0px 7px 10px -7px rgba(0, 0, 0, 0.15);
+}
+.sidebarSelected td {
+	padding: 5px;
+}
+.sidebarTotalCost {
+	text-align: right;
+	font-weight: bold;
+	padding: 5px;
+}
+.hiddenPaddingFix {
+	margin-top: calc(-7vh - 2rem);
+}

@@ -1,14 +1,51 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url(https://fonts.googleapis.com/css?family=Handlee);
+
+* {
+	padding: 0;
+	margin: 0;
+}
+html, body {
+	background-color: #EDF1F5;
+	width: 100%;
+	height: 100%;
+	font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #2F323E;
+	text-align: justify;
+	overflow-x: hidden;
+}
+img {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin: auto;
+}
+h3 {
+	margin: 0 0 2rem 0;
+	text-align: left;
+}
+.container-fluid {
+	padding: 0px;
+	margin: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* Loading animation */
+.loader {
+	width: 90px;
+	height: 90px;
+	margin: 150px auto;
+	border: 12px solid #FFF;
+	border-radius: 50%;
+	border-top: 12px solid #428BCA;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
