@@ -1,7 +1,7 @@
 {
   "name": "fire-cook",
   "version": "0.1.0",
-  "homepage": "https://yorickgao.github.io/fire-cook",
+  "homepage": "https://YorickGao.github.io/fire-cook",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
