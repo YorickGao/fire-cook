@@ -1,0 +1,44 @@
+.Welcome {
+    margin: 7vh auto 0 auto;
+    max-width: 70vw;
+    font-size: 2vw;
+    font-family: "PingFang SC";
+    font-weight: 300;
+    padding: 2rem;
+    text-align: justify;
+    display: block;
+}
+
+.backgroundImg {
+    opacity: 0.3;
+}
+
+/*.backgroundImg:hover {*/
+/*opacity: 0.3;*/
+/*}*/
+
+.intro {
+    position: absolute;
+    top: 18vw;
+    left: 20vw;
+    width: 60vw;
+    height: 30vw;
+}
+
+.introHide {
+    position: absolute;
+    top: 20vw;
+    left: 15vw;
+    width: 60vw;
+    height: 30vw;
+    opacity: 0;
+}
+
+.btn {
+    background-color: #404040;
+    border-radius: 0.5vw;
+    color: white;
+    font-size: 1.4vw;
+    font-family: "PingFang SC";
+    padding: 0.4vw 1vw;
+}
