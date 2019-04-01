@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { Grid, Row } from 'react-bootstrap';
 // import 'bootstrap/dist/css/bootstrap.css';
 import { Route } from 'react-router-dom';
-import { modelInstance } from './data/DinnerModel'
+import { modelInstance } from './tools/DinnerModel'
 import Welcome from './Welcome/Welcome';
-import SelectDish from "./SelectDish/SelectDish";
-import ViewDish from "./ViewDish/ViewDish";
-import Overview from "./Overview/Overview";
-import Printout from "./Printout/Printout";
-import {Header} from "./header";
+import SelectDish from './container/SelectDish/SelectDish';
+import ViewDish from './container/ViewDish/ViewDish';
+import Overview from './Overview/Overview';
+import Printout from './Printout/Printout';
+import {Header} from './component/header';
 
 class App extends Component {
   constructor(props) {

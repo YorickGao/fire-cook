@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
 import './ViewDish.css';
-import Sidebar from '../Sidebar/Sidebar';
-import DishInfo from '../DishInfo/DishInfo';
+import Sidebar from '../../component/Sidebar/Sidebar';
+import DishInfo from '../../component/DishInfo/DishInfo';
 
 class ViewDish extends Component {
   render() {

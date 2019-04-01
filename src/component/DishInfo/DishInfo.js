@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Panel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { modelInstance } from '../data/DinnerModel';
+import { modelInstance } from '../../tools/DinnerModel';
 import './DishInfo.css';
 
 class DishInfo extends Component {
@@ -16,7 +16,7 @@ class DishInfo extends Component {
     };
   }
 
-  // Update the state and re-render the application when data is retrieved.
+  // Update the state and re-render the application when tools is retrieved.
   componentDidMount = () => {
     this.props.model.addObserver(this);
 

@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 import './Dishes.css';
 // Alternative to passing the model as the component property,
 // we can import the model instance directly
-import {modelInstance} from '../data/DinnerModel';
+import {modelInstance} from '../../tools/DinnerModel';
 
 class Dishes extends Component {
   constructor(props) {
     super(props);
     // We create the state to store the various statuses
-    // e.g. API data loading or error
+    // e.g. API tools loading or error
     this.state = {
       status: 'INITIAL'
     };
@@ -21,14 +21,14 @@ class Dishes extends Component {
 
   // this methods is called by React lifecycle when the
   // component is actually shown to the user (mounted to DOM)
-  // that's a good place to call the API and get the data
+  // that's a good place to call the API and get the tools
   componentDidMount = () => this.getAllDishes();
 
-  getAllDishes = (newCategory, newFilter) => {
+  getAllDishes = async (newCategory, newFilter) => {
     newCategory = newCategory || 'Main course';
     newFilter = newFilter || '';
 
-    modelInstance.getAllDishes(newCategory, newFilter).then((dishes) => {
+    await modelInstance.getAllDishes(newCategory, newFilter).then((dishes) => {
       this.setState({
         status: 'LOADED',
         dishes: dishes.results,
@@ -48,7 +48,7 @@ class Dishes extends Component {
     // or show the list of returned dishes.
     switch (this.state.status) {
       case 'INITIAL':
-        dishesList = <div className="loader"></div>
+        dishesList = <div className="loader"></div>;
         break;
       case 'LOADED':
         dishesList = this.state.dishes.map((dish) =>
@@ -66,10 +66,10 @@ class Dishes extends Component {
               </Panel>
             </Link>
           </Col>
-        )
+        );
         break;
       default:
-        dishesList = <b>Failed to load data, please try again.</b>
+        dishesList = <b>Failed to load data, please try again.</b>;
         break;
     }
 

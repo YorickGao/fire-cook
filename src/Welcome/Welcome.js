@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import {modelInstance} from '../data/DinnerModel';
+import {modelInstance} from '../tools/DinnerModel';
 import bgImg from './backgroundimg.jpg';
 import classes from './index.module.css';
 

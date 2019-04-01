@@ -1,5 +1,6 @@
 const httpOptions = {
   headers: {
+    //You need to use your own key to fetch data
     'X-Mashape-Key': 'e5bc36f030msh68fb5daef8565e4p103ca9jsndc15ca09ea94',
     'Accept': 'application/json'
   }
@@ -18,7 +19,7 @@ const DinnerModel = function () {
   this.ERROR_SUFFIX = "Something went wrong...";
   this.ERROR_PRICE_OF_DISH = "Cannot get price of dish.";
   this.ERROR_ADD_DISH = "Cannot add dish to menu.";
-  this.WEB_ERROR_MESSAGE = "<div class=\"row equal\" style=\"text-align:center;\">Something went wrong, please try again in a few seconds...</div>";
+  this.WEB_ERROR_MESSAGE = "<div class=\"row equal\" style=\"text-align:center;\">Ooops, something went wrong, please try again in a few seconds...</div>";
 
   // Sets the number of guests.
   this.setNumberOfGuests = (num) => {
@@ -47,7 +48,7 @@ const DinnerModel = function () {
 
   // Returns all ingredients for all the dishes on the menu.
   this.getAllIngredients = () => {
-    var ingredients = [];
+    let ingredients = [];
     for (let i = 0; i < selectedDishes.length; i++) {
       for (let j = 0; j < selectedDishes[i].ingredients.length; j++) {
         ingredients.push(selectedDishes[i].ingredients[j]);
@@ -86,8 +87,8 @@ const DinnerModel = function () {
   // dish", "dessert"). You can use the filter argument to filter out the dish
   // by name or ingredient (use for search). If you don't pass any filter all
   // the dishes will be returned.
-  this.getAllDishes = (type='', filter='') => {
-    const url = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/search?type=' + type + '&query=' + filter + '&number=16';
+  this.getAllDishes = (category='', filter='') => {
+    const url = `https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/search?type=${category}&query=${filter}&number=16`;
     return fetch(url, httpOptions)
       .then(processResponse)
       .catch(handleError);
