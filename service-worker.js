@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/fire-cook/precache-manifest.dda9806704239093fb6e8d5b0d43619d.js"
+  "/fire-cook/precache-manifest.7bf631bd3187931c3d24d31f4846037c.js"
 );
 
 workbox.clientsClaim();

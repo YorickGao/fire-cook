@@ -1,13 +1,13 @@
 {
-  "main.css": "/fire-cook/static/css/main.5283eb6d.chunk.css",
-  "main.js": "/fire-cook/static/js/main.5722b681.chunk.js",
-  "main.js.map": "/fire-cook/static/js/main.5722b681.chunk.js.map",
+  "main.css": "/fire-cook/static/css/main.3b71c33f.chunk.css",
+  "main.js": "/fire-cook/static/js/main.7dbb6126.chunk.js",
+  "main.js.map": "/fire-cook/static/js/main.7dbb6126.chunk.js.map",
   "runtime~main.js": "/fire-cook/static/js/runtime~main.2d904e75.js",
   "runtime~main.js.map": "/fire-cook/static/js/runtime~main.2d904e75.js.map",
   "static/js/2.967674fd.chunk.js": "/fire-cook/static/js/2.967674fd.chunk.js",
   "static/js/2.967674fd.chunk.js.map": "/fire-cook/static/js/2.967674fd.chunk.js.map",
   "index.html": "/fire-cook/index.html",
-  "precache-manifest.dda9806704239093fb6e8d5b0d43619d.js": "/fire-cook/precache-manifest.dda9806704239093fb6e8d5b0d43619d.js",
+  "precache-manifest.7bf631bd3187931c3d24d31f4846037c.js": "/fire-cook/precache-manifest.7bf631bd3187931c3d24d31f4846037c.js",
   "service-worker.js": "/fire-cook/service-worker.js",
-  "static/css/main.5283eb6d.chunk.css.map": "/fire-cook/static/css/main.5283eb6d.chunk.css.map"
+  "static/css/main.3b71c33f.chunk.css.map": "/fire-cook/static/css/main.3b71c33f.chunk.css.map"
 }

@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "de93c7de815c0bf4cb79",
-    "url": "/fire-cook/static/css/main.5283eb6d.chunk.css"
+    "revision": "1ea73139eb57d9f8540d",
+    "url": "/fire-cook/static/css/main.3b71c33f.chunk.css"
   },
   {
-    "revision": "de93c7de815c0bf4cb79",
-    "url": "/fire-cook/static/js/main.5722b681.chunk.js"
+    "revision": "1ea73139eb57d9f8540d",
+    "url": "/fire-cook/static/js/main.7dbb6126.chunk.js"
   },
   {
     "revision": "585eb6865626f8a7e6f4",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/fire-cook/static/js/2.967674fd.chunk.js"
   },
   {
-    "revision": "d8b527e20b1128db1a8d29969b3a72c6",
+    "revision": "c79144e9e373c9acb2cc51a168a674fe",
     "url": "/fire-cook/index.html"
   }
 ];
