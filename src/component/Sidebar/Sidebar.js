@@ -91,7 +91,7 @@ class Sidebar extends Component {
               </tbody>
             </table>
             <div className="sidebarTotalCost">
-              SEK {this.state.totalMenuPrice}
+              {this.state.totalMenuPrice}
             </div>
             </div>
             <hr/>

@@ -8,8 +8,8 @@ const httpOptions = {
 
 const DinnerModel = function () {
   let numberOfGuests = retrieveNumberOfGuestsFromCache();
-  var selectedDishes = retrieveSelectedDishesFromCache();
-  var observers = [];
+  let selectedDishes = retrieveSelectedDishesFromCache();
+  let observers = [];
 
   // Conditions
   this.GUESTS = "guests";
@@ -96,7 +96,7 @@ const DinnerModel = function () {
 
   // Function that returns a dish of specific ID
   this.getDish = (id) => {
-    const url = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/' + id + '/information';
+    const url = `https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/${id}/information`;
     return fetch(url, httpOptions)
       .then(processResponse)
       .catch(handleError);
