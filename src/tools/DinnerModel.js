@@ -1,11 +1,11 @@
 const httpOptions = {
   headers: {
     //You need to use your own key to fetch data
-    'X-Mashape-Key': 'e5bc36f030msh68fb5daef8565e4p103ca9jsndc15ca09ea94',
     'Accept': 'application/json'
   }
 };
 
+const API_KEY = 'e5bc36f030msh68fb5daef8565e4p103ca9jsndc15ca09ea94';
 const DinnerModel = function () {
   let numberOfGuests = retrieveNumberOfGuestsFromCache();
   let selectedDishes = retrieveSelectedDishesFromCache();
@@ -88,7 +88,7 @@ const DinnerModel = function () {
   // by name or ingredient (use for search). If you don't pass any filter all
   // the dishes will be returned.
   this.getAllDishes = (category='', filter='') => {
-    const url = `https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/search?type=${category}&query=${filter}&number=16`;
+    const url = `https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/search?type=${category}&query=${filter}&number=16&apiKey=${API_KEY}`;
     return fetch(url, httpOptions)
       .then(processResponse)
       .catch(handleError);
@@ -96,7 +96,7 @@ const DinnerModel = function () {
 
   // Function that returns a dish of specific ID
   this.getDish = (id) => {
-    const url = `https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/${id}/information`;
+    const url = `https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/${id}/information&apiKey=${API_KEY}`;
     return fetch(url, httpOptions)
       .then(processResponse)
       .catch(handleError);
